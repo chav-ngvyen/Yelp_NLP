@@ -20,6 +20,14 @@ def get_cat(biz_cat, yelp_cat):
     else:
         return (-1, "not in list")
 
+# Count number of words in review 
+def review_len(review_str):
+    '''
+    Count number of words in review
+    '''
+    res = len(review_str.split())
+    return res
+
 # Split at capitalize words and add underscore
 def convert_category(cat: List):
     arr = []
